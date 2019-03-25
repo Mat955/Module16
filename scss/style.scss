@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c0e5ff;
+    font-family: 'Baloo Chettan', cursive;
+    max-width: 100vw;
+}
+
+h1 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 3vw;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(60deg,
+        hsl(0, 75%, 50%) 10%,
+        hsl(20, 75%, 50%) 10%,
+        hsl(20, 75%, 50%) 25%,
+        hsl(50, 75%, 50%) 25%,
+        hsl(50, 75%, 50%) 40%,
+        hsl(130, 75%, 50%) 40%,
+        hsl(130, 75%, 50%) 55%,
+        hsl(200, 75%, 50%) 55%,
+        hsl(200, 75%, 50%) 70%,
+        hsl(260, 75%, 50%) 70%,
+        hsl(260, 75%, 50%) 85%,
+        hsl(0, 75%, 50%) 85%);
+
+    text-shadow: 0.5px -0.6vw #fff4;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 10s BeProud linear infinite,
+        3s Always ease alternate infinite;
+}
+
+@keyframes BeProud {
+    100% {
+        background-position: 100vw 0px;
+    }
+}
+
+@keyframes Always {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.joke-template {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    p {
+        padding: 5px;
+        display: inline;
+        font-size: 20px;
+        border: 2px dotted #ee82ee;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+    button {
+        padding: 20px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+        cursor: pointer;
+    }
+
+}
