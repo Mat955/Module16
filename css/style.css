@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c0e5ff;
+  font-family: 'Baloo Chettan', cursive;
+  max-width: 100vw;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 3vw;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(60deg, #df2020 10%, #df6020 10%, #df6020 25%, #dfbf20 25%, #dfbf20 40%, #20df40 40%, #20df40 55%, #209fdf 55%, #209fdf 70%, #6020df 70%, #6020df 85%, #df2020 85%);
+  text-shadow: 0.5px -0.6vw #fff4;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: 10s BeProud linear infinite, 3s Always ease alternate infinite;
+          animation: 10s BeProud linear infinite, 3s Always ease alternate infinite;
+}
+
+@-webkit-keyframes BeProud {
+  100% {
+    background-position: 100vw 0px;
+  }
+}
+
+@keyframes BeProud {
+  100% {
+    background-position: 100vw 0px;
+  }
+}
+
+@-webkit-keyframes Always {
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes Always {
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.joke-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.joke-template p {
+  padding: 5px;
+  display: inline;
+  font-size: 20px;
+  border: 2px dotted #ee82ee;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+
+.button button {
+  padding: 20px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#84fab0), color-stop(51%, #8fd3f4), to(#84fab0));
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
